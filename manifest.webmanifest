@@ -1,0 +1,16 @@
+{
+  "name": "100 дней без сценария",
+  "short_name": "100 дней",
+  "description": "100 сценариев говорящих сторис, 29 Reels и личный трекер прогресса",
+  "lang": "ru",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#090d13",
+  "theme_color": "#090d13",
+  "icons": [
+    {"src": "./icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any maskable"},
+    {"src": "./icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable"}
+  ]
+}
