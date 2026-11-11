@@ -94,7 +94,114 @@ body{background:#fff9fc}
 .dash-card .sectionhead h2{font-size:17px}
 }
 @media(min-width:831px){.nav button .tab-icon{display:grid;place-items:center;width:26px}.nav button .tab-label{font-size:14px}.nav button.tab-import .tab-icon{color:#e84093}}
-</style></head><body>
+
+/* VKADRE: полноценная ночная палитра */
+html[data-theme="dark"]{
+ color-scheme:dark;
+ --bg:#0d0c13;--ink:#f5f1fa;--muted:#b1a6bd;--line:#30283b;
+ --pink:#ff5fae;--orange:#ffb866;--purple:#bf8aff;--green:#49d5a2;
+ --shadow:0 16px 40px rgba(0,0,0,.29);
+ background:#0d0c13;
+}
+html[data-theme="dark"] body{background:var(--bg);color:var(--ink)}
+html[data-theme="dark"] .sidebar,
+html[data-theme="dark"] .topline,
+html[data-theme="dark"] .panel,
+html[data-theme="dark"] .stat,
+html[data-theme="dark"] .progress-card,
+html[data-theme="dark"] .task,
+html[data-theme="dark"] .dash-card,
+html[data-theme="dark"] .dash-tile,
+html[data-theme="dark"] .dash-task,
+html[data-theme="dark"] .modal,
+html[data-theme="dark"] .bottom,
+html[data-theme="dark"] .field,
+html[data-theme="dark"] .subnav button,
+html[data-theme="dark"] .secondary,
+html[data-theme="dark"] .calcell,
+html[data-theme="dark"] .dash-day{
+ background:#1a1624;
+ color:var(--ink);
+ border-color:#332a41;
+}
+html[data-theme="dark"] .topline{background:#17131f}
+html[data-theme="dark"] .bottom{background:rgba(19,16,28,.97);box-shadow:0 -12px 38px #0007}
+html[data-theme="dark"] .dash-card,
+html[data-theme="dark"] .panel{box-shadow:0 12px 30px #0002}
+html[data-theme="dark"] .dash-progress p,
+html[data-theme="dark"] .small-muted,
+html[data-theme="dark"] .taskdesc,
+html[data-theme="dark"] .side-note,
+html[data-theme="dark"] .settings-row p,
+html[data-theme="dark"] .dash-task .dash-task-body small,
+html[data-theme="dark"] .dash-tile small,
+html[data-theme="dark"] .stat small,
+html[data-theme="dark"] .stat em,
+html[data-theme="dark"] .calhead,
+html[data-theme="dark"] .dash-day small{color:#b6a9c2}
+html[data-theme="dark"] .topline .eyebrow{color:#fff5fc}
+html[data-theme="dark"] .hero{
+ background:linear-gradient(125deg,#392137,#352047 62%,#251b45);
+ border-color:#5b345d;
+}
+html[data-theme="dark"] .hero p{color:#e2cce3}
+html[data-theme="dark"] .hero-art{background:#4a2a4e99;border-color:#6a426e}
+html[data-theme="dark"] .logoicon{box-shadow:0 8px 19px #eb529150}
+html[data-theme="dark"] .nav button{color:#b7a9c5}
+html[data-theme="dark"] .nav button.active,
+html[data-theme="dark"] .bottom button.active{color:#ff78bf;background:#352038}
+html[data-theme="dark"] .nav button.active .tab-icon{color:#ff78bf}
+html[data-theme="dark"] .bottom button.active .tab-icon{background:#492547}
+html[data-theme="dark"] .bottom button.tab-import .tab-icon{border-color:#1a1624;background:linear-gradient(135deg,#ff609e,#d73b9e,#874ddd)}
+html[data-theme="dark"] .side-note,
+html[data-theme="dark"] .hint{background:#302334;border-color:#54354f;color:#eed0df}
+html[data-theme="dark"] .dash-ring{background:conic-gradient(#ef58b1 var(--progress),#392a43 0)}
+html[data-theme="dark"] .dash-ring:before{background:#1a1624}
+html[data-theme="dark"] .dash-track,
+html[data-theme="dark"] .track{background:#362a43}
+html[data-theme="dark"] .dash-day.today,
+html[data-theme="dark"] .calcell.today{background:#382039;border-color:#d25296}
+html[data-theme="dark"] .dash-day.today strong{color:white}
+html[data-theme="dark"] .dash-date,
+html[data-theme="dark"] .chip,
+html[data-theme="dark"] .soft,
+html[data-theme="dark"] .iconbtn,
+html[data-theme="dark"] .avatar,
+html[data-theme="dark"] .avatar div{background:#382338;color:#ff8cc6}
+html[data-theme="dark"] .task.done{background:#142b27;border-color:#235344}
+html[data-theme="dark"] .task.done .tasktitle,
+html[data-theme="dark"] .dash-task.done .dash-task-body b{color:#a0b5b0}
+html[data-theme="dark"] .tick{background:#271f30;border-color:#58435d;color:transparent}
+html[data-theme="dark"] .task.done .tick,
+html[data-theme="dark"] .dash-task.done .tick{color:white;background:#1ca777;border-color:#1ca777}
+html[data-theme="dark"] .calitem{background:#45233d;color:#ffc0dc}
+html[data-theme="dark"] .calitem.finished{background:#1c4337;color:#90e8c0}
+html[data-theme="dark"] .empty,
+html[data-theme="dark"] .dash-onboard{background:#211929;border-color:#5a3450;color:#bfb0c7}
+html[data-theme="dark"] .empty b,
+html[data-theme="dark"] .dash-onboard strong{color:#f8eaf5}
+html[data-theme="dark"] .dash-onboard p{color:#bba5b8}
+html[data-theme="dark"] .subnav button.active{background:#452740;color:#ffa2cf;border-color:#754266}
+html[data-theme="dark"] input::placeholder,
+html[data-theme="dark"] textarea::placeholder{color:#9585a0}
+html[data-theme="dark"] input,
+html[data-theme="dark"] textarea,
+html[data-theme="dark"] select{color-scheme:dark}
+html[data-theme="dark"] .modal-back{background:#05030abf}
+html[data-theme="dark"] .modal-head button{background:#38253d;color:#f8ebfa}
+html[data-theme="dark"] .settings-row{border-color:#332a41}
+html[data-theme="dark"] .footer{color:#9e8ea8}
+html[data-theme="dark"] .progress-label b,
+html[data-theme="dark"] .eyebrow{color:#ff83c5}
+html[data-theme="dark"] .btn.secondary{background:#292132;color:#f1e6f5;border-color:#49394f}
+html[data-theme="dark"] .btn.soft{background:#40243d;color:#ffafd3}
+html[data-theme="dark"] .theme-choice{background:#241d2e;border-color:#493651;color:#d9c7df}
+html[data-theme="dark"] .theme-choice.active{background:#462944;color:#ff9acb;border-color:#b75697}
+.theme-switcher{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px;margin-top:13px}
+.theme-choice{min-width:0;border:1px solid #eddde7;background:#fff8fc;border-radius:13px;padding:13px 6px;font-size:13px;font-weight:800;color:#80677a}
+.theme-choice.active{background:#ffe6f3;border-color:#e989ba;color:#d72d87}
+.theme-choice:focus-visible{outline:2px solid #e35aa8;outline-offset:2px}
+</style><script>(function(){try{var t=localStorage.getItem("vkadre_theme")||"system";document.documentElement.dataset.theme=t==="system"?(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light"):t}catch(e){document.documentElement.dataset.theme="light"}})();</script></head><body>
 <div class="shell"><aside class="sidebar"><div class="logo"><div class="logoicon">◎</div><div><strong>В КАДРЕ</strong><small>Твой контент-трекер</small></div></div><nav class="nav" id="desktopnav"></nav><div class="side-note">♡ Прогресс хранится на этом устройстве. Сохраняй резервную копию в настройках.</div></aside><main class="main"><div class="topline"><div class="eyebrow">В кадре</div><button class="avatar" data-nav="settings" aria-label="Настройки"><div>⚙</div></button></div><div id="content"></div><div class="footer">В кадре · Сделано для тех, кто решился быть собой ♡</div></main></div><nav class="bottom" id="mobilenav" aria-label="Навигация"></nav><div id="overlay"></div><div id="toaster" aria-live="polite"></div><script src="./data.js"></script><script src="./calendar.js"></script>
 <script>
 (function(){
@@ -138,7 +245,7 @@ function statsPage(){return '<div class="eyebrow">Твои результаты<
 function plan(){var visible=tasks().map(function(t,i){return{t:t,i:i}}).filter(function(x){return(filter==="all"||(filter==="done"?x.t.done:!x.t.done))&&(!query||(x.t.title+" "+(x.t.desc||"")).toLowerCase().includes(query.toLowerCase()))});return '<div class="sectionhead"><div><div class="eyebrow">Твои идеи</div><h1 style="margin:6px 0 0;font-size:31px;letter-spacing:-1px">'+safe(active().name)+'</h1></div><button class="btn primary" id="add-one">＋ Идея</button><button class="btn secondary" data-nav="import">Вставить план</button></div>'+stats()+'<div class="toolbar"><input id="search" class="field" placeholder="Поиск по темам…" value="'+safe(query)+'"><select class="field" id="plan-select">'+state.plans.map(function(p){return '<option value="'+safe(p.id)+'" '+(p.id===state.active?"selected":"")+'>'+safe(p.name)+'</option>'}).join("")+'</select></div><div class="subnav" style="margin-bottom:17px"><button data-filter="all" class="'+(filter==="all"?"active":"")+'">Все ('+tasks().length+')</button><button data-filter="todo" class="'+(filter==="todo"?"active":"")+'">В планах</button><button data-filter="done" class="'+(filter==="done"?"active":"")+'">Готово ('+completed()+')</button></div><div class="list" id="tasks-list">'+(visible.length?visible.map(function(x){return taskHTML(x.t,x.i)}).join(""):'<div class="empty"><b>Здесь пока пусто</b>Измени поиск или добавь контент-план.</div>')+'</div>'}
 function calendarPage(){return window.VKCalendar?window.VKCalendar.render():''}
 function importPage(){return '<div class="eyebrow">Добавляй своё</div><h1 style="font-size:32px;margin:8px 0 9px;letter-spacing:-1px">Импорт контент-плана ✨</h1><p class="small-muted">Просто скопируй план из ChatGPT, мессенджера или заметок и вставь в поле ниже.</p><div class="panel" style="margin-top:22px"><label for="import-text" style="display:block;font-weight:800;margin-bottom:10px">Твои будущие сторис</label><textarea id="import-text" class="field" style="width:100%;min-height:235px;resize:vertical;line-height:1.7" placeholder="День 1. Расскажи, почему начал снимать сторис&#10;День 2. Покажи свой обычный день&#10;День 3. Ответь на вопрос подписчика"></textarea><p class="hint">Поддерживаются строки «День 1. Тема», «1. Тема», списки с • или — и просто темы с новой строки. Пустые строки пропускаются. Если нужен сценарий с абзацами — добавь его в редакторе задания.</p><div style="display:grid;gap:10px"><label style="font-size:13px;font-weight:800" for="import-mode">Как добавить?</label><select id="import-mode" class="field"><option value="new">Создать отдельный план</option><option value="append">Добавить к текущему плану</option><option value="replace">Заменить текущий план (с удалением его отметок)</option></select><input id="new-name" class="field" maxlength="80" placeholder="Название нового плана (например, Мои 30 Reels)" value="Мой контент-план"><button id="do-import" class="btn primary" style="width:100%">✨ Импортировать задания</button></div></div><div class="panel" style="margin-top:16px"><h3>Хочешь придумать план с нуля?</h3><p class="small-muted">Создай пустой план и добавляй идеи вручную.</p><button id="new-empty" class="btn secondary">Создать пустой план</button></div>'}
-function settings(){return '<div class="eyebrow">Все под контролем</div><h1 style="font-size:32px;margin:9px 0 22px">Настройки ⚙</h1><div class="panel"><h3>Мои планы</h3><p class="small-muted">Каждый план и его отметки независимы.</p><div id="plans-manage">'+state.plans.map(function(p){return '<div class="settings-row"><div><b>'+safe(p.name)+'</b><p>'+p.items.length+' заданий · '+p.items.filter(function(x){return x.done}).length+' выполнено</p></div><div class="actions"><button class="btn soft" data-switch="'+safe(p.id)+'">Открыть</button><button class="btn secondary" data-remove="'+safe(p.id)+'" aria-label="Удалить план">🗑</button></div></div>'}).join("")+'</div></div><div class="panel" style="margin-top:18px"><h3>Резервная копия</h3><p class="small-muted">Данные сохраняются локально на этом устройстве, а не в аккаунте. JSON переносит планы, даты и отметки, но не сами фото и видео. Медиафайлы сохраняй отдельно.</p><div class="actions"><button id="export" class="btn primary">↓ Скачать копию JSON</button><button id="restore" class="btn secondary">↑ Восстановить из JSON</button><input type="file" id="restorefile" accept=".json,application/json" hidden></div></div><div class="panel" style="margin-top:18px"><h3>Как установить на телефон?</h3><p class="small-muted"><b>iPhone:</b> открой сайт в Safari → «Поделиться» → «На экран Домой».<br><b>Android:</b> открой в Chrome → меню ⋮ → «Установить приложение» или «Добавить на главный экран».</p><button id="install-btn" class="btn secondary">Установить, если доступно</button></div><p class="small-muted" style="margin-top:20px">Без регистрации, аналитики и загрузки личных данных на сервер. Очистка данных браузера или удаление приложения могут удалить прогресс.</p>'}
+function settings(){var mode="system";try{mode=localStorage.getItem("vkadre_theme")||"system"}catch(e){}return '<div class="eyebrow">Все под контролем</div><h1 style="font-size:32px;margin:9px 0 22px">Настройки ⚙</h1><div class="panel"><h3>Внешний вид 🌙</h3><p class="small-muted">Выбери оформление. Настройка запоминается на этом устройстве.</p><div class="theme-switcher" role="group" aria-label="Тема приложения"><button class="theme-choice '+(mode==="light"?"active":"")+'" data-theme-choice="light" aria-pressed="'+(mode==="light")+'">☀ Светлая</button><button class="theme-choice '+(mode==="dark"?"active":"")+'" data-theme-choice="dark" aria-pressed="'+(mode==="dark")+'">☾ Тёмная</button><button class="theme-choice '+(mode==="system"?"active":"")+'" data-theme-choice="system" aria-pressed="'+(mode==="system")+'">◐ Система</button></div></div><div class="panel" style="margin-top:18px"><h3>Мои планы</h3><p class="small-muted">Каждый план и его отметки независимы.</p><div id="plans-manage">'+state.plans.map(function(p){return '<div class="settings-row"><div><b>'+safe(p.name)+'</b><p>'+p.items.length+' заданий · '+p.items.filter(function(x){return x.done}).length+' выполнено</p></div><div class="actions"><button class="btn soft" data-switch="'+safe(p.id)+'">Открыть</button><button class="btn secondary" data-remove="'+safe(p.id)+'" aria-label="Удалить план">🗑</button></div></div>'}).join("")+'</div></div><div class="panel" style="margin-top:18px"><h3>Резервная копия</h3><p class="small-muted">Данные сохраняются локально на этом устройстве, а не в аккаунте. JSON переносит планы, даты и отметки, но не сами фото и видео. Медиафайлы сохраняй отдельно.</p><div class="actions"><button id="export" class="btn primary">↓ Скачать копию JSON</button><button id="restore" class="btn secondary">↑ Восстановить из JSON</button><input type="file" id="restorefile" accept=".json,application/json" hidden></div></div><div class="panel" style="margin-top:18px"><h3>Как установить на телефон?</h3><p class="small-muted"><b>iPhone:</b> открой сайт в Safari → «Поделиться» → «На экран Домой».<br><b>Android:</b> открой в Chrome → меню ⋮ → «Установить приложение» или «Добавить на главный экран».</p><button id="install-btn" class="btn secondary">Установить, если доступно</button></div><p class="small-muted" style="margin-top:20px">Без регистрации, аналитики и загрузки личных данных на сервер. Очистка данных браузера или удаление приложения могут удалить прогресс.</p>'}
 function render(){nav();document.getElementById("content").innerHTML=({home:home,plan:plan,calendar:calendarPage,import:importPage,stats:statsPage,settings:settings}[current]||home)();if(current==="plan"){var s=document.getElementById("search");s.addEventListener("input",function(){query=s.value;var pos=s.selectionStart;document.getElementById("tasks-list").innerHTML=tasks().map(function(t,i){return{t:t,i:i}}).filter(function(x){return(filter==="all"||(filter==="done"?x.t.done:!x.t.done))&&(!query||(x.t.title+" "+(x.t.desc||"")).toLowerCase().includes(query.toLowerCase()))}).map(function(x){return taskHTML(x.t,x.i)}).join("")||'<div class="empty">Ничего не найдено</div>';s.focus();s.setSelectionRange(pos,pos)})}}
 function go(p){if(p==="import"&&current!=="import"){}current=p;window.scrollTo(0,0);render()}
 function parse(raw){var lines=raw.replace(/\r/g,"").split("\n").map(function(s){return s.trim()}).filter(Boolean);return lines.map(function(line){return line.replace(/^(?:день|day)\s*\d+\s*[:.)—–-]?\s*/i,"").replace(/^\d{1,4}\s*[.):—–-]\s*/,"").replace(/^[•●▪\-–—*]\s*/,"").trim()}).filter(Boolean).slice(0,1000).map(function(title){return{id:"t"+Date.now().toString(36)+Math.random().toString(36).slice(2,9),title:title.slice(0,500),desc:"",done:false}})}
@@ -148,6 +255,7 @@ function closeModal(){document.getElementById("overlay").innerHTML="";editId=nul
 var pendingInstall=null;window.addEventListener("beforeinstallprompt",function(e){e.preventDefault();pendingInstall=e});
 document.addEventListener("click",function(e){var b=e.target.closest("button");if(!b)return;
 if(window.VKCalendar&&window.VKCalendar.onClick(b,state))return;
+if(b.dataset.themeChoice){var choice=b.dataset.themeChoice;try{localStorage.setItem("vkadre_theme",choice)}catch(e){}var dark=choice==="system"&&window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;document.documentElement.dataset.theme=choice==="system"?(dark?"dark":"light"):choice;render();return}
 if(b.dataset.nav){go(b.dataset.nav);return}
 if(b.dataset.toggle){var t=tasks().find(function(x){return x.id===b.dataset.toggle});if(t){t.done=!t.done;save();render();toast(t.done?"Готово! Ты молодец 💖":"Вернули в работу")};return}
 if(b.dataset.edit){showEdit(b.dataset.edit);return}
@@ -167,6 +275,7 @@ if(b.id==="install-btn"){if(pendingInstall){pendingInstall.prompt();pendingInsta
 document.addEventListener("change",function(e){if(window.VKCalendar&&window.VKCalendar.onChange(e,state))return;if(e.target.id==="plan-select"){state.active=e.target.value;save();render()}if(e.target.id==="import-mode"){document.getElementById("new-name").style.display=e.target.value==="new"?"block":"none"}if(e.target.id==="restorefile"){var f=e.target.files&&e.target.files[0];if(!f)return;if(f.size>5e6){toast("Файл слишком большой");return}f.text().then(function(raw){var o=JSON.parse(raw),v=o.state||o;if(!Array.isArray(v.plans)||!v.plans.length||v.plans.some(function(p){return !Array.isArray(p.items)||typeof p.name!=="string"||typeof p.id!=="string"||p.items.length>5000}))throw Error("format");if(!confirm("Заменить все текущие планы и прогресс данными из файла?"))return;state={active:v.active,plans:v.plans.map(function(p){return{id:p.id,name:p.name.slice(0,80),items:p.items.map(function(t){return{id:String(t.id),title:String(t.title||"").slice(0,500),desc:String(t.desc||"").slice(0,10000),done:!!t.done}})}})};if(!state.plans.some(function(p){return p.id===state.active}))state.active=state.plans[0].id;save();go("settings");toast("Данные восстановлены")}).catch(function(){toast("Неверный формат резервной копии")})}});
 document.addEventListener("click",function(e){if(e.target.classList.contains("modal-back"))closeModal()});
 if("serviceWorker"in navigator)window.addEventListener("load",function(){navigator.serviceWorker.register("./sw.js").catch(function(){})});
+if(window.matchMedia){var scheme=window.matchMedia("(prefers-color-scheme: dark)");var onSystemChange=function(e){try{if((localStorage.getItem("vkadre_theme")||"system")==="system")document.documentElement.dataset.theme=e.matches?"dark":"light"}catch(err){}};if(scheme.addEventListener)scheme.addEventListener("change",onSystemChange)}
 render();
 })();
 </script></body></html>
