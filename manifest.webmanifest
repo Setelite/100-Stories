@@ -3,7 +3,7 @@
   "short_name": "В кадре",
   "description": "Мой контент-план, сторис, Reels и трекер выполнения",
   "lang": "ru",
-  "start_url": "./index.html",
+  "start_url": "./app.html",
   "scope": "./",
   "display": "standalone",
   "orientation": "portrait-primary",
