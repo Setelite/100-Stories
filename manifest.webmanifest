@@ -1,5 +1,5 @@
 {
-  "name": "В кадре — контент-план и сторис",
+  "name": "В кадре — контент-план",
   "short_name": "В кадре",
   "description": "Мой контент-план, сторис, Reels и трекер выполнения",
   "lang": "ru",
@@ -10,6 +10,12 @@
   "background_color": "#fff9fb",
   "theme_color": "#fff9fb",
   "icons": [
+    {
+      "src": "./icons/vkadre-icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
     {
       "src": "./icons/icon-192.png",
       "sizes": "192x192",
